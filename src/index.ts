@@ -11,6 +11,7 @@ const SLIM: Record<string, string> = {
   apply_patch: "Apply a patch to files.",
   write: "Write file.",
   bash: "Run shell command.",
+  shell: "Run shell command.",
   glob: "Find files.",
   grep: "Search in files.",
   list: "List directory.",

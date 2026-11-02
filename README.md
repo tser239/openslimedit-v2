@@ -47,7 +47,7 @@ No custom tools. No system prompt injection. No modifications to built-in tool b
 Install from npm:
 
 ```bash
-npm install -D @tser239/openslimedit@2.0.0
+npm install -D @tser239/openslimedit@2.0.1
 ```
 
 Add to your OpenCode V2 config:
