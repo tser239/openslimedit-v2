@@ -44,22 +44,32 @@ No custom tools. No system prompt injection. No modifications to built-in tool b
 
 ## Installation
 
-Install from npm:
-
-```bash
-npm install -D @tser239/openslimedit
-```
+### Option 1: Install from GitHub (works now, no publishing required)
 
 Add to your OpenCode V2 config:
 
 ```jsonc
 // .opencode/opencode.jsonc
 {
-    "plugins": ["@tser239/openslimedit"]
+    "plugins": ["github:tser239/openslimedit-v2"]
 }
 ```
 
 Restart OpenCode. The plugin will automatically start optimizing your sessions.
+
+### Option 2: Install from npm (requires 2FA on your npm account)
+
+```bash
+npm install -D @tser239/openslimedit
+```
+
+```jsonc
+{
+    "plugins": ["@tser239/openslimedit"]
+}
+```
+
+> ⚠️ npm v12 requires two-factor authentication to publish packages, so the npm package may not be immediately available. The GitHub installation (Option 1) works without any publishing step.
 
 ---
 

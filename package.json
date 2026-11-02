@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "prepublishOnly": "bun run build"
   },
   "main": "./dist/index.js",
