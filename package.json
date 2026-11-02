@@ -1,33 +1,40 @@
 {
-  "name": "openslimedit",
-  "version": "1.0.4",
-  "description": "OpenCode plugin that reduces token usage by up to 33% — compresses tool descriptions, compacts read output, adds line-range edit support",
+  "name": "@tser239/openslimedit",
+  "version": "1.0.5",
+  "description": "OpenCode v2 plugin that reduces token usage by up to 45% — compresses tool descriptions, compacts read output, adds line-range edit support",
   "type": "module",
   "license": "MIT",
-  "author": "ASidorenkoCode",
+  "author": "tser239",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ASidorenkoCode/openslimedit.git"
+    "url": "https://github.com/tser239/openslimedit-v2.git"
   },
-  "homepage": "https://github.com/ASidorenkoCode/openslimedit",
+  "homepage": "https://github.com/tser239/openslimedit-v2",
   "bugs": {
-    "url": "https://github.com/ASidorenkoCode/openslimedit/issues"
+    "url": "https://github.com/tser239/openslimedit-v2/issues"
   },
   "keywords": [
     "opencode",
     "opencode-plugin",
+    "opencode-v2",
     "token-optimization",
     "llm",
     "code-editing",
     "ai"
   ],
-  "scripts": {},
-  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "bun run build"
+  },
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "files": [
-    "src",
+    "dist",
     "LICENSE",
     "README.md"
   ],
@@ -39,5 +46,8 @@
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -44,16 +44,20 @@ No custom tools. No system prompt injection. No modifications to built-in tool b
 
 ## Installation
 
+Install from npm:
+
+```bash
+npm install -D @tser239/openslimedit
+```
+
 Add to your OpenCode V2 config:
 
 ```jsonc
 // .opencode/opencode.jsonc
 {
-    "plugins": ["openslimedit@latest"]
+    "plugins": ["@tser239/openslimedit"]
 }
 ```
-
-Using `@latest` ensures you always get the newest version automatically when OpenCode starts.
 
 Restart OpenCode. The plugin will automatically start optimizing your sessions.
 
