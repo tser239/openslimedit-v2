@@ -44,12 +44,12 @@ No custom tools. No system prompt injection. No modifications to built-in tool b
 
 ## Installation
 
-Add to your OpenCode config:
+Add to your OpenCode V2 config:
 
 ```jsonc
 // .opencode/opencode.jsonc
 {
-    "plugin": ["openslimedit@latest"]
+    "plugins": ["openslimedit@latest"]
 }
 ```
 
